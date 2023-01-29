@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>MP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js" integrity="sha512-2ho+gY0H62N4Z9oxD422L2ZYXiOMq9l+Aub1QNz4Z4UDOtDVxz4vk6O6R3Hqqc9Y7qSvZFl7cy3+eZ/ITnUrLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <style>
+    body {
+	display: flex;
+    flex-direction: column;
+    /* scroll-behavior: smooth; */
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="images">
+        <h3 id="names"></h3>
+        <button id="leave" type="submit">Leave</button>
+    </div>
+
+    <div class="func">
+        <div style="flex-grow: 4;"><h3 align="center">Received Images</h3></div>
+        <div style="flex-grow: 5;"><h3 align="center">Sent Images</h3></div>
+    </div>
+
+    <div class="container-c"></div>
+    <br>
+    <footer align="right">
+        <input id="btn_" type="file" />
+        <label for="btn_" id="btn-label" title="Send Images">&nbsp;&nbsp;&#43;&nbsp;&nbsp;</label>
+    </footer>
+    <script src="/client.js"></script>
+</body>
+</html>

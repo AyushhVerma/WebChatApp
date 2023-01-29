@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>MP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js" 
+        integrity="sha512-rV0Q1QWodkoLjts/qP2XHtjvUPTmN46k4eH0lzOR3mDui8a0YnL/uqydipXA9mQ2wG6J4imL0BO6/26rcFho7Q==" 
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <h1 align="center">Image Share Over Web Sockets</h1>
+    <div class="username-div">
+        <label for="username" id="username-label">
+            <strong>Enter a Username</strong>
+        </label>
+            <input id="userName" name="username" autofocus class="input-css" 
+                   spellcheck="false" style="font-weight: bold; font-size:16px;"/>
+            <span style="visibility: hidden; font-size:0.8rem">Invalid username.</span>
+        <br />
+    </div>
+    <div class="container-class">
+        <div class="item" style="padding-top: 60px;">
+            <button onclick="render()">Create Room</button>
+            <br /><br />
+            <div id="show">
+                <br />
+                <div id="buttons">
+                    <button id="copyToClip" onclick="copied()" class="visibility"></button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button id="btn1" class="visibility">Enter Room</button>
+                </div>
+            </div>
+        </div>
+        <br /><br />
+        <div class="item" style="padding-top: 50px;">
+            <label for="roomid">Join Room</label>
+            <br />
+            <input type="text" id="room_id" class="input-css" placeholder="Room ID" 
+                   spellcheck="false" style="font-weight: bold; font-size:16px;"/>
+            <button id="btn2">Join</button>
+        </div>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>
+
+
+<!-- 
+    React
+    firebase
+ -->
